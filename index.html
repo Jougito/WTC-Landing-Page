@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>WoW Taller Creador | Actualmente ZoneWoW</title>
+
+    <!--[if IE]>
+    <meta content="false" http-equiv="imagetoolbar" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <![endif]-->
+
+    <link rel="stylesheet" href="static/css/style.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <meta name="robots" content="none">
+    <meta http-equiv="refresh" content="60">
+	<link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+
+    <!--[if LT IE 9]>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <![endif]-->
+
+    <style>
+    html, body { background: #000 url("images/bg-wow.jpg") 50% 0 no-repeat; color: #aaafb8; font: normal 12px/1.5 "Trebuchet MS", "Arial", sans-serif; }
+    </style>
+
+    <!--[if LT IE 9]>
+    <style>
+    .info .twitter { background-image: url("/static/maintenance/wow/images/twitter.png"); }
+    .footer .copyright { zoom: 1; float: left; }
+    .footer .legal { zoom: 1; float: left; }
+    .footer .legal a { zoom: 1; float: left; padding: 0 1em 0 0; }
+    .footer .language { zoom: 1; white-space: normal; }
+    .footer .blizzard { zoom: 1; float: left; }
+    .footer .privacy { zoom: 1; }
+    .footer .privacy a { zoom: 1; }
+
+    body.zh-cn .notice .logo span { background-image: url("/static/local-common/images/logos/bnet-default-cn.gif"); }
+    body.zh-cn .info .twitter { background-image: url("/static/maintenance/wow/images/twitter-cn.png"); }
+    </style>
+    <![endif]-->
+
+    <!--[if IE 6]>
+    <script>
+    try { document.execCommand('BackgroundImageCache', false, true) } catch(e) {}
+    </script>
+    <![endif]-->
+
+    <script>
+    var css = 'class';
+    var locale = (function() {
+        var doc = document;
+        var nav = navigator;
+        var cookie = doc.cookie || '';
+        var query = doc.location.search || '';
+        var all = ['de-de', 'en-us', 'en-gb', 'es-mx', 'es-es', 'fr-fr', 'it-it', 'ko-kr', 'pl-pl', 'pt-br', 'ru-ru', 'zh-cn', 'zh-tw'];
+        var test = -1;
+        var start;
+        var i;
+        var loc;
+
+        function getIndex(haystack) {
+            return function(needle) {
+                needle = needle.toLowerCase();
+                needle = needle.replace('_', '-');
+
+                for (i = 0; loc = haystack[i]; i++) {
+                    if (loc === needle) {
+                        return i;
+                    }
+                }
+
+                needle = needle.substr(0, 2);
+
+                for (i = 0; loc = haystack[i]; i++) {
+                    if (loc.substr(0, 2) === needle) {
+                        return i;
+                    }
+                }
+
+                return -1;
+            }
+        };
+
+        var index = getIndex(all);
+
+        start = query.indexOf('loc=');
+        if (start > -1) {
+            test = index(encodeURIComponent(query.substr(start + 4, 5)));
+            if (test > -1) {
+                return all[test];
+            }
+        }
+
+        start = cookie.indexOf('loc=');
+        if (start > -1) {
+            test = index(encodeURIComponent(cookie.substr(start + 4, 5)));
+            if (test > -1) {
+                return all[test];
+            }
+        }
+
+        test = nav.userLanguage || nav.language;
+        test = index(test);
+        if (test > -1) {
+            return all[test];
+        }
+
+        return 'en-us';
+    })();
+
+    (function(currentLocale) {
+        var doc = document;
+        var html = doc.getElementsByTagName('html')[0];
+        html.setAttribute('lang', currentLocale);
+    })(locale);
+    </script>
+
+    <!--[if lt IE 8]>
+    <script>
+    var css = 'className';
+    </script>
+    <![endif]-->
+
+<script id="__isTpiViewExists"></script><link rel="stylesheet" type="text/css" href="chrome-extension_/npiecjlhkngdinoeekmccdbjdgclmnbk/css/about.html"></head>
+<body class="es-mx">
+
+    <script>
+    (function(currentLocale) {
+        var doc = document;
+        var body = doc.getElementsByTagName('body')[0];
+        body.setAttribute(css, currentLocale);
+    })(locale);
+    </script>
+    <div class="wrapper">
+
+        <!-- US -->
+
+        <div class="notice" id="es-mx:notice" style="display: block; ">
+            <h1 class="logo" align="center"><br><br><br><br><br><a href="logo"></a></h1>
+            <div class="info">
+                <h2 class="title">&iexcl;Nos hemos mudado!</h2>
+                <p class="short" align="center">Este Dominio pertenece a ZoneWoW. </br>Los foros de WoW Taller Creador ahora est&aacute;n disponibles en el dominio "zonewow.com"</p>
+                <div class="twitter" align="center">
+                Para m&aacute;s informaci&oacute;n, visita <a tabindex="1" target="_blank" href="http://www.zonewow.com/">ZoneWoW.com</a></div>
+				<p class="short" align="center"></br>&iexcl;Gracias por tu paciencia!</p>
+            </div>
+        </div>
+        <div class="footer" id="es-mx:footer" style="display: block; ">
+
+            <span class="copyright">&copy;2015 ZoneWoW. Todos los derechos&nbsp;reservados</span>
+
+            <span class="legal">
+                <a target="_blank" href="info.html" tabindex="2">Más Informaci&oacute;n</a>
+                </span>
+				
+				<span class="legal">
+                <a target="_blank" href="http://twitter.com/C_ZoneWoW" tabindex="2">Sigenos en Twitter</a>
+                </span>
+				
+				<span class="legal">
+                <a target="_blank" href="https://www.facebook.com/pages/Comunidad-ZoneWoW/835115113226189" tabindex="2">Siguenos en Facebook</a>
+                </span>
+
+            <a href="javascript:;" tabindex="100" id="change-language"><span class="language">Europa - Espa&ntilde;ol (EU)</span></a>
+
+
+        </div>
+
+
+    </div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28369464-1']);
+  _gaq.push(['_setDomainName', 'wowrean.es']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<div id="mainContainer_CTID"><div class="fixedDiv SkipThisFixedPosition UrlGadgetsDiv" style="position: fixed; left: 0px; top: 34px !important; z-index: 2147483640; "></div><div class="fixedDiv SkipThisFixedPosition GeneralGadgetsDiv" style="position: fixed; left: 0px; top: 34px !important; z-index: 2147483640; width: 100%; "></div></div></body><style type="text/css" id="CWToolbarStyle">html { padding-top: 0px !important;}</style>
+</html>
